@@ -1,7 +1,4 @@
-import {
-  createTestAdapter,
-  type TestAdapter,
-} from "@effection-contrib/test-adapter";
+import { createTestAdapter, type TestAdapter } from "@effectionx/test-adapter";
 
 import * as bdd from "@std/testing/bdd";
 

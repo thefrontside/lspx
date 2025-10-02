@@ -42,6 +42,7 @@ export function useConnection(
     );
     let writable = yield* disposable(
       new rpc.StreamMessageWriter(
+        //@ts-expect-error 🤷
         Writable.fromWeb(options.write, { signal }),
       ),
     );

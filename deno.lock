@@ -1,8 +1,8 @@
 {
-  "version": "4",
+  "version": "5",
   "specifiers": {
-    "jsr:@effection-contrib/test-adapter@0.1": "0.1.0",
-    "jsr:@effection/effection@^4.0.0-alpha.7": "4.0.0-alpha.7",
+    "jsr:@effection/effection@^4.0.0-beta.2": "4.0.0-beta.2",
+    "jsr:@effectionx/test-adapter@0.1": "0.1.2",
     "jsr:@std/assert@1": "1.0.11",
     "jsr:@std/assert@^1.0.10": "1.0.11",
     "jsr:@std/assert@^1.0.11": "1.0.11",
@@ -16,7 +16,7 @@
     "jsr:@std/testing@^1.0.9": "1.0.9",
     "npm:@types/node@*": "22.5.4",
     "npm:deepmerge@^4.3.1": "4.3.1",
-    "npm:effection@4.0.0-alpha.5": "4.0.0-alpha.5",
+    "npm:effection@4.0.0-beta.2": "4.0.0-beta.2",
     "npm:optics-ts@^2.4.1": "2.4.1",
     "npm:vscode-jsonrpc@^8.2.1": "8.2.1",
     "npm:vscode-languageserver-protocol@^3.17.5": "3.17.5",
@@ -24,14 +24,17 @@
     "npm:zod@^3.24.2": "3.24.2"
   },
   "jsr": {
-    "@effection-contrib/test-adapter@0.1.0": {
-      "integrity": "1263aed6b7e6cff8655eb410a81875f633ccaf15074b9ebb375f6457394f6dd4",
+    "@effection/effection@4.0.0-alpha.7": {
+      "integrity": "bb6be892e048c784a4d0ae274a5f9197eb968e3bab15a83b7763a9b1f74a382d"
+    },
+    "@effection/effection@4.0.0-beta.2": {
+      "integrity": "d1d281fa568320535e8d7e698394851d97295393b0e62d4b17f1a205f915119a"
+    },
+    "@effectionx/test-adapter@0.1.2": {
+      "integrity": "6f3b484b1bde69591c082bd512b649e583f213af5d8b3f8d38a5e74ec4d56b01",
       "dependencies": [
         "npm:effection"
       ]
-    },
-    "@effection/effection@4.0.0-alpha.7": {
-      "integrity": "bb6be892e048c784a4d0ae274a5f9197eb968e3bab15a83b7763a9b1f74a382d"
     },
     "@std/assert@1.0.11": {
       "integrity": "2461ef3c368fe88bc60e186e7744a93112f16fd110022e113a0849e94d1c83c1",
@@ -91,8 +94,8 @@
     "deepmerge@4.3.1": {
       "integrity": "sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A=="
     },
-    "effection@4.0.0-alpha.5": {
-      "integrity": "sha512-7s8dwQF8oqOxtsUrFMRQBUOWXq23Khb/IYurwqEnSTUwsgkSgQww/9A9aBwdRQ1hMmELouy/YkvhC7e9oGQfbA=="
+    "effection@4.0.0-beta.2": {
+      "integrity": "sha512-iqEBfInNx3rB2DhQYYu6LcJ7zRn4yFo+DjUntcWNZeYWh1LiucMXb2JMiD1OA8WPgc3KOwQBxXfOwby1v34WdQ=="
     },
     "optics-ts@2.4.1": {
       "integrity": "sha512-HaYzMHvC80r7U/LqAd4hQyopDezC60PO2qF5GuIwALut2cl5rK1VWHsqTp0oqoJJWjiv6uXKqsO+Q2OO0C3MmQ=="
@@ -128,8 +131,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@effection-contrib/test-adapter@0.1",
-      "jsr:@effection/effection@^4.0.0-alpha.7",
+      "jsr:@effection/effection@^4.0.0-beta.2",
+      "jsr:@effectionx/test-adapter@0.1",
       "jsr:@std/assert@1",
       "jsr:@std/expect@^1.0.13",
       "jsr:@std/streams@^1.0.9",
