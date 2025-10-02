@@ -1,6 +1,5 @@
-import { each, main } from "effection";
+import { each, main, type Operation } from "effection";
 import { useConnection } from "../../lib/json-rpc-connection.ts";
-import { constant } from "https://jsr.io/@effection/effection/4.0.0-alpha.7/lib/constant.ts";
 
 await main(function* () {
   let client = yield* useConnection({
@@ -23,3 +22,9 @@ await main(function* () {
     yield* each.next();
   }
 });
+
+function constant<T>(value: T): Operation<T> {
+  return {
+    [Symbol.iterator]: () => ({ next: () => ({ done: true, value }) }),
+  };
+}

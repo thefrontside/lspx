@@ -8,12 +8,12 @@
     "build:jsr": "deno -A tasks/build-jsr.ts"
   },
   "imports": {
-    "@effection-contrib/test-adapter": "jsr:@effection-contrib/test-adapter@^0.1.0",
+    "@effectionx/test-adapter": "jsr:@effectionx/test-adapter@^0.1.0",
     "@std/expect": "jsr:@std/expect@^1.0.13",
     "@std/streams": "jsr:@std/streams@^1.0.9",
     "@std/testing": "jsr:@std/testing@^1.0.9",
     "deepmerge": "npm:deepmerge@^4.3.1",
-    "effection": "jsr:@effection/effection@^4.0.0-alpha.7",
+    "effection": "jsr:@effection/effection@^4.0.0-beta.2",
     "@std/assert": "jsr:@std/assert@1",
     "optics-ts": "npm:optics-ts@^2.4.1",
     "vscode-jsonrpc": "npm:vscode-jsonrpc@^8.2.1",
