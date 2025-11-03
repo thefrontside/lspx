@@ -21,9 +21,9 @@ export function start(opts: LSPXOptions): Operation<RPCEndpoint> {
     let agents: LSPAgent[] = [];
 
     for (let command of opts.commands) {
-      let [exe, ...args] = command.split(/\s/g);
-      let process = yield* useDaemon(exe, {
-        args,
+      let [exe] = command.split(/\s/g);
+      let process = yield* useDaemon("/bin/sh", {
+        args: ["-c", command],
         stdin: "piped",
         stdout: "piped",
         stderr: "piped",
